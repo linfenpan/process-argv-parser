@@ -1,0 +1,23 @@
+{
+  "name": "process-argv-parser",
+  "version": "0.0.1",
+  "description": "process.argv parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/test.js",
+    "test-server": "node index.js --server=3005 --open=index.html --haha=\"78552\" -p 7878"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linfenpan/process-argv-parser.git"
+  },
+  "keywords": [
+    "parser"
+  ],
+  "author": "da宗熊",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linfenpan/process-argv-parser/issues"
+  },
+  "homepage": "https://github.com/linfenpan/process-argv-parser#readme"
+}
