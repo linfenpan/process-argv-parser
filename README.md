@@ -39,12 +39,12 @@ const parser = new Parser();
 // -o index.html => { open: 'index.html' }
 parser
   .option('-d', 'dirname', Parser.String)
-  .option('--server', parserInt)
+  .option('--server', Parser.Int)
   .option('-o', 'open');
 
-const data = parser.parse(/* void 0  或 数组: ['--server=3005', '--open', 'index.html']*/);
+const data = parser.parse(/* void 0[代表转换当前控制台传入的参数]  或 数组: ['--server=3005', '--open', 'index.html'] */);
 
 // 如果是 npm run xxx --param1=xx 则会在 outer 中体现
 // 否则，都在 inner 中，获取参数
-console.log(data); // argv => { inner: {}, outer: {} }
+console.log(data); // data => { inner: {}, outer: {} }
 ```
